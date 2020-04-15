@@ -145,19 +145,26 @@ body {
   display: flex;
 }
 main {
-  border: dotted;
   width: 800px;
   height: 1200px;
   font-family: 'Open Sans';
   line-height: 1.5;
   font-size: 16px;
+  padding-left: 50px;
 }
 main h1 {
   font-size: 2.5rem;
-  font-weight: bold;
+  font-weight: 400;
 }
 main h2 {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+main h3 {
   font-size: 1rem;
+  font-weight: bold;
+}
+main h4 {
   font-weight: bold;
 }
 main div {
@@ -167,13 +174,19 @@ main .name-box {
   margin-top: 0;
 }
 main nav {
+  margin-top: 20px;
+  font: 'Open Sans';
   display: flex;
   justify-content: space-between;
 }
 main nav a {
   text-decoration: none;
+  color: black;
 }
 main .left-and-right-container-wrapper {
+  border: thin solid black;
+  height: 800px;
+  margin-top: 50px;
   display: flex;
 }
 main .left-and-right-container-wrapper .left-container {

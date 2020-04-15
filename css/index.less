@@ -79,22 +79,34 @@ html, body {
 // Main container wrapper
 // With nesting
 main{
-	border: dotted;
+	// border: dotted;
 	 width: 800px;
 	 height: 1200px;
 	 font-family: @font;
 	 line-height: 1.5;
 	 font-size: 16px;
+	 padding-left: 50px;
 
 	 h1{
 			font-size: 2.5rem;
-			font-weight: bold;
+			font-weight: 400;
+			
 	 }
 
 	 h2{
+		 font-size: 1.25rem;
+		 font-weight: bold;
+	 }
+
+	 h3{
 		 font-size: 1rem;
 		 font-weight: bold;
 	 }
+
+	 h4{
+		 font-weight: bold;
+	 }
+
 
 	 div{
 		 margin-top: 10px;
@@ -105,16 +117,24 @@ main{
 	 }
 
 	 nav{	 
+		 margin-top: 20px;
+		 font:@font;
 		.flex-box-mixin();
 		justify-content: space-between;
 		
 		a{
 			text-decoration: none;
-		
+			color: black;
 		}
 	 }// end nav bar
 
 	 .left-and-right-container-wrapper{
+
+			// black thin border around left and right containers
+			border: thin solid black;
+			height: 800px;
+			margin-top: 50px;
+		
 
 		.flex-box-mixin();
 
