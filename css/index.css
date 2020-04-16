@@ -178,7 +178,7 @@ main nav {
   font: 'Open Sans';
   display: flex;
   justify-content: space-between;
-  line-height: 3;
+  line-height: 3.25;
 }
 main nav img {
   width: 60px;
