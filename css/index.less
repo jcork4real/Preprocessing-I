@@ -68,16 +68,16 @@ html, body {
 @backgroundColorRight: white; 
 @font: 'Open Sans';
 
-// Mixins
-
 // Flex-box Mixin
 .flex-box-mixin{
 	display:flex;
 	// border: 1px solid black;
 }
 
-// Main container wrapper
-// With nesting
+// Media Queries
+@mobile: ~"(max-width: 600px)";
+
+// Main container wrapper with nesting
 main{
 	// border: dotted;
 	 width: 800px;
@@ -87,10 +87,15 @@ main{
 	 font-size: 16px;
 	 padding-left: 50px;
 
+	 
+	 @media @mobile{
+		margin-left: 50px;
+		margin-top: 50px;
+	}
+
 	 h1{
-			font-size: 2.5rem;
-			font-weight: 400;
-			
+		font-size: 2.5rem;
+		font-weight: 400;
 	 }
 
 	 h2{
@@ -130,16 +135,14 @@ main{
 
 			&:hover{
 				border: 1px solid black;
-			}
-			
+			}	
 		}
 
 
 		a{
 			text-decoration: none;
 			color: black;
-			
-
+		
 			&:hover{
 				color: grey;
 			}
@@ -152,9 +155,7 @@ main{
 			border: thin solid black;
 			height: 800px;
 			margin-top: 50px;
-		
-
-		.flex-box-mixin();
+			.flex-box-mixin();
 
 	 	.left-container{
 			.flex-box-mixin();
@@ -192,7 +193,6 @@ main{
 			padding-left: 40px;
 			padding-top: 50px;
 			padding-right: 40px;
-
 		
 		 } //end right container
 	 } // end left and right container wrapper
