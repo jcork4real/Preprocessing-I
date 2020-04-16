@@ -178,10 +178,21 @@ main nav {
   font: 'Open Sans';
   display: flex;
   justify-content: space-between;
+  line-height: 3;
+}
+main nav img {
+  width: 60px;
+  height: 60px;
+}
+main nav img:hover {
+  border: 1px solid black;
 }
 main nav a {
   text-decoration: none;
   color: black;
+}
+main nav a:hover {
+  color: grey;
 }
 main .left-and-right-container-wrapper {
   border: thin solid black;
@@ -221,4 +232,8 @@ main .left-and-right-container-wrapper .right-container {
   padding-left: 40px;
   padding-top: 50px;
   padding-right: 40px;
+}
+main .body-logo {
+  transform: translate(-20%, -60%);
+  opacity: 0.1;
 }
